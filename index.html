@@ -12,6 +12,7 @@
             padding: 0;
             box-sizing: border-box;
             background-color: #f5f5f5;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -183,7 +184,7 @@
             <button onclick="window.location.href='https://example.com/figurine'">Get Your Own Personalized Figurine</button>
         </div>
         <div class="model" id="3d-model">
-            <img id="rotating-model" src="your-3d-model.gif" alt="Rotating 3D Model">
+            <img src="your-3d-model.gif" alt="Rotating 3D Model">
         </div>
     </section>
 
@@ -211,17 +212,13 @@
     </footer>
 
     <script>
-        window.addEventListener('scroll', function() {
-            const model = document.getElementById('rotating-model');
-            const scrollPosition = window.scrollY;
-            const frameHeight = model.naturalHeight;
-            const totalFrames = 36; // Assuming the GIF has 36 frames
-
-            // Calculate the current frame to display based on the scroll position
-            const currentFrame = Math.min(Math.floor(scrollPosition / window.innerHeight * totalFrames), totalFrames - 1);
-
-            // Update the GIF to display the corresponding frame
-            model.style.objectPosition = `0 -${currentFrame * frameHeight / totalFrames}px`;
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
     </script>
 </body>
