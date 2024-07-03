@@ -134,6 +134,19 @@
             border-radius: 5px;
         }
 
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: auto;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -143,6 +156,34 @@
 
         .model img {
             max-width: 100%;
+            height: auto;
+        }
+
+        #custom-logos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 60px 20px;
+            background-color: #E8E8E8;
+            flex-direction: column-reverse;
+        }
+
+        #custom-logos .content {
+            flex: 1;
+            text-align: left;
+        }
+
+        #custom-logos .gallery {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #custom-logos .gallery img {
+            width: calc(50% - 10px);
             height: auto;
         }
 
@@ -159,6 +200,10 @@
             #contact-us .social-icons {
                 flex-direction: row;
             }
+
+            #custom-logos {
+                flex-direction: row;
+            }
         }
     </style>
 </head>
@@ -166,6 +211,7 @@
     <header>
         <h1>RiyadhFDM</h1>
         <nav>
+            <a href="#about-us">About Us</a>
             <a href="#contact-us">Contact Us</a>
             <a href="#">Get a Quote</a>
         </nav>
@@ -197,12 +243,33 @@
         </div>
     </section>
 
+    <section class="gallery">
+        <img src="placeholder1.jpg" alt="Placeholder Image 1">
+        <img src="placeholder2.jpg" alt="Placeholder Image 2">
+        <img src="placeholder3.jpg" alt="Placeholder Image 3">
+        <img src="placeholder4.jpg" alt="Placeholder Image 4">
+        <img src="placeholder5.jpg" alt="Placeholder Image 5">
+        <img src="placeholder6.jpg" alt="Placeholder Image 6">
+    </section>
+
+    <section id="custom-logos" class="section">
+        <div class="content">
+            <h2>Order Your Own Custom Logos and Initials!</h2>
+            <p>Bring your brand to life with custom 3D printed logos and initials. Whether for personal or professional use, our high-quality 3D printing service can create unique and durable designs tailored to your specifications. Stand out with a distinctive emblem that reflects your identity.</p>
+        </div>
+        <div class="gallery">
+            <img src="placeholder7.jpg" alt="Placeholder Image 7">
+            <img src="placeholder8.jpg" alt="Placeholder Image 8">
+            <img src="placeholder9.jpg" alt="Placeholder Image 9">
+            <img src="placeholder10.jpg" alt="Placeholder Image 10">
+        </div>
+    </section>
+
     <section id="contact-us" class="section">
         <h2>Contact Us</h2>
         <div class="social-icons">
             <a href="https://instagram.com" target="_blank">Instagram</a>
             <a href="https://tiktok.com" target="_blank">TikTok</a>
-            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
         </div>
     </section>
 
