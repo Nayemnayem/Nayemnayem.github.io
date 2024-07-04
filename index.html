@@ -76,7 +76,7 @@
         }
 
         #about-us .content p {
-            font-size: 18px;
+            font-size: 20px; /* Slightly larger text */
             line-height: 1.6;
         }
 
@@ -144,7 +144,8 @@
 
         .gallery img {
             width: calc(33.333% - 10px);
-            height: auto;
+            height: 200px;
+            object-fit: cover;
         }
 
         footer {
@@ -174,6 +175,11 @@
             text-align: left;
         }
 
+        #custom-logos .content p {
+            font-size: 20px; /* Slightly larger text */
+            line-height: 1.6;
+        }
+
         #custom-logos .gallery {
             flex: 1;
             display: flex;
@@ -184,7 +190,8 @@
 
         #custom-logos .gallery img {
             width: calc(50% - 10px);
-            height: auto;
+            height: 200px;
+            object-fit: cover;
         }
 
         @media (min-width: 768px) {
