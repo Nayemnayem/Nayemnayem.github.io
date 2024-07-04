@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمة الطباعة ثلاثية الأبعاد - RiyadhFDM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Aldrich', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            scroll-behavior: smooth;
+            direction: rtl;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1E1E2F;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #F05454;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        #about-us {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+            color: #fff;
+            flex-direction: column;
+        }
+
+        #about-us .content {
+            flex: 1;
+            z-index: 1; /* Make sure content is above the video */
+        }
+
+        #about-us .content p {
+            font-size: 20px; /* Slightly larger text */
+            line-height: 1.6;
+        }
+
+        #about-us .content button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #F05454;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #about-us .model {
+            flex: 1;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1; /* Make sure content is above the video */
+        }
+
+        .embed-section {
+            padding: 20px;
+            background-color: #F7F7F7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .embed-section h2 {
+            order: -1;
+            margin-bottom: 20px;
+        }
+
+        .embed-section div {
+            margin-bottom: 20px;
+        }
+
+        #contact-us .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 24px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #1E1E2F;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: calc(33.333% - 10px);
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1E1E2F;
+            color: #fff;
+        }
+
+        .model img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #custom-logos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 60px 20px;
+            background-color: #E8E8E8;
+            flex-direction: column-reverse;
+        }
+
+        #custom-logos .content {
+            flex: 1;
+            text-align: right;
+        }
+
+        #custom-logos .content p {
+            font-size: 20px; /* Slightly larger text */
+            line-height: 1.6;
+        }
+
+        #custom-logos .gallery {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #custom-logos .gallery img {
+            width: calc(50% - 10px);
+            height: calc(50% - 10px);
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            #about-us {
+                flex-direction: row;
+            }
+
+            .embed-section {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #contact-us .social-icons {
+                flex-direction: row;
+            }
+
+            #custom-logos {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RiyadhFDM</h1>
+        <nav>
+            <a href="#about-us">من نحن</a>
+            <a href="#contact-us">اتصل بنا</a>
+            <a href="index.html">English</a>
+        </nav>
+    </header>
+
+    <section id="about-us" class="section">
+        <video autoplay muted loop>
+            <source src="your-video.mp4" type="video/mp4">
+            متصفحك لا يدعم فيديو HTML5.
+        </video>
+        <div class="content">
+            <h2>من نحن</h2>
+            <p>مرحبًا بكم في RiyadhFDM، مزود خدمات الطباعة ثلاثية الأبعاد الرائد في الرياض، المملكة العربية السعودية. نحن نقدم خدمات طباعة ثلاثية الأبعاد عالية الجودة لمختلف التطبيقات.</p>
+            <button onclick="window.location.href='https://example.com/quote'">احصل على عرض سعر</button>
+            <button onclick="window.location.href='https://example.com/figurine'">احصل على مجسم شخصي</button>
+        </div>
+        <div class="model" id="3d-model">
+            <img src="your-3d-model.gif" alt="نموذج ثلاثي الأبعاد">
+        </div>
+    </section>
+
+    <section class="embed-section">
+        <h2>تابعنا على وسائل التواصل الاجتماعي</h2>
+        <div>
+            <iframe src="https://instagram.com/pubity/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.tiktok.com/embed/@kylec3d" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="placeholder1.jpg" alt="صورة توضيحية 1">
+        <img src="placeholder2.jpg" alt="صورة توضيحية 2">
+        <img src="placeholder3.jpg" alt="صورة توضيحية 3">
+        <img src="placeholder4.jpg" alt="صورة توضيحية 4">
+        <img src="placeholder5.jpg" alt="صورة توضيحية 5">
+        <img src="placeholder6.jpg" alt="صورة توضيحية 6">
+    </section>
+
+    <section id="custom-logos" class="section">
+        <div class="content">
+            <h2>اطلب شعاراتك وأحرفك الخاصة!</h2>
+            <p>أضف الحياة إلى علامتك التجارية مع شعارات وأحرف مطبوعة بتقنية ثلاثية الأبعاد مخصصة. سواء للاستخدام الشخصي أو المهني، يمكن لخدمتنا ذات الجودة العالية للطباعة ثلاثية الأبعاد أن تخلق تصاميم فريدة ومتينة مصممة وفقًا لمواصفاتك. تميز بشعار فريد يعكس هويتك.</p>
+        </div>
+        <div class="gallery">
+            <img src="placeholder7.jpg" alt="صورة توضيحية 7">
+            <img src="placeholder8.jpg" alt="صورة توضيحية 8">
+            <img src="placeholder9.jpg" alt="صورة توضيحية 9">
+            <img src="placeholder10.jpg" alt="صورة توضيحية 10">
+        </div>
+    </section>
+
+    <section id="contact-us" class="section">
+        <h2>اتصل بنا</h2>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">إنستجرام</a>
+            <a href="https://tiktok.com" target="_blank">تيك توك</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 RiyadhFDM. جميع الحقوق محفوظة.
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
